@@ -1,4 +1,4 @@
-package vo;
+package bean;
 
 import java.util.Arrays;
 import java.util.List;
