@@ -2,4 +2,5 @@
 所以重新学习一下java8的函数式编程和流操作
 
 * 项目中常常用到了，想remove掉list某个元素，写了正确的做法和常犯的错误
-eg:[好的文章](https://www.cnblogs.com/dolphin0520/p/3933551.html)
+eg:
+[remove的一篇文章](https://www.cnblogs.com/dolphin0520/p/3933551.html)
