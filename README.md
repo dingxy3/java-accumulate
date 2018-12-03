@@ -4,3 +4,4 @@
 * 项目中常常用到了，想remove掉list某个元素，写了正确的做法和常犯的错误
 eg:
 [remove的一篇文章](https://www.cnblogs.com/dolphin0520/p/3933551.html)
+[流的一篇文章](https://cloud.tencent.com/developer/article/1187833)
