@@ -6,9 +6,11 @@ import remove.TestRemove;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 
@@ -38,9 +40,13 @@ public class ListToMap {
         org));
         System.out.println("==="+ JSON.toJSONString(map1));
 
+        //lis转map，如果key1等于key2只取key1
         Map<String,Org> map2 = list.stream().collect(Collectors.toMap(Org::getId, org -> org,(key1,key2)->key1));
         System.out.println("==="+ JSON.toJSONString(map1));
 
-        list.stream().flatMap(org -> org.getName()).collect(toList());
+        list.stream().map(org -> org.getId()+"001");
+        System.out.println("map==="+ JSON.toJSONString(list));
+        list.stream().flatMap();
+        System.out.println("map==="+ JSON.toJSONString(list));
     }
 }
