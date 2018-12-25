@@ -82,11 +82,48 @@ public class TestRemove {
         org4.setPid("0");
         org4.setName("e");
 
+        Org org5 = new Org();
+        org5.setId("2");
+        org5.setPid("10");
+        org5.setName("b");
+
         list.add(org);
         list.add(org1);
         list.add(org2);
         list.add(org3);
         list.add(org4);
+        return list;
+
+    }
+
+    public static List<Org> get0(){
+
+        List<Org> list = new ArrayList<Org>();
+        Org org = new Org();
+        org.setId("1");
+        org.setPid("2");
+        org.setName("a");
+
+        Org org1 = new Org();
+        org1.setId("2");
+        org1.setPid("3");
+        org1.setName("b");
+
+        Org org2 = new Org();
+        org2.setId("3");
+        org2.setPid("4");
+        org2.setName("f");
+
+        Org org3 = new Org();
+        org3.setId("4");
+        org3.setPid("5");
+        org3.setName("e");
+
+
+        list.add(org);
+        list.add(org1);
+        list.add(org2);
+        list.add(org3);
         return list;
 
     }

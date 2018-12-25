@@ -16,6 +16,16 @@ public class Org {
 
     private  String name ;
 
+    private  Long a = 0L ;
+
+    public Long getA() {
+        return a;
+    }
+
+    public void setA(Long a) {
+        this.a = a;
+    }
+
     public String getId() {
         return id;
     }

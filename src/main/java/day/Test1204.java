@@ -11,6 +11,7 @@ package day;
  */
 public class Test1204 {
 
+    //验证null==2是否报错
     public static void main(String[] args) {
         //null == 2 ; dto.getId == 2 当dto.geId为空时候报错
     }

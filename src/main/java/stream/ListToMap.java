@@ -30,7 +30,7 @@ public class ListToMap {
          //
          List<String> l=  list.stream().map(org -> org.getName()).collect(toList());
          System.out.println("==="+ JSON.toJSONString(l));
-       // list.stream().filter(org -> org.getName()).collect(toList());
+       // list.stream().filter(org -> org.getName()).collect(toList());git
 
        //list to mao
         Map<String,Org> map = list.stream().collect(Collectors.toMap(o -> o.getId(), o->o));
@@ -46,7 +46,7 @@ public class ListToMap {
 
         list.stream().map(org -> org.getId()+"001");
         System.out.println("map==="+ JSON.toJSONString(list));
-        list.stream().flatMap();
+      //  list.stream().flatMap();
         System.out.println("map==="+ JSON.toJSONString(list));
     }
 }
