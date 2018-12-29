@@ -12,7 +12,7 @@ import java.util.Optional;
  *
  * @version [版本号, 2018/12/11]
  * @Auther: dingxy
- * @Description:
+ * @Description:验证optional空指针问题
  * @since [产品/模块版本]
  * =============================
  */
@@ -21,18 +21,20 @@ public class Test1211 {
    private static String b ="";
     public static void main(String[] args) {
 
+        //可以多次map
         JSONObject object = JSON.parseObject(a);
         Object object1 = Optional.ofNullable(object).map(o->o.get("code"));
        // Object object2= Optional.ofNullable(object).map(o->o.get("data")).flatMap(o -> o.);
         System.out.println(JSON.toJSONString(object1));
       //  System.out.println(JSON.toJSONString(object2));
 
+        //不报错输出null
         JSONObject objectb = JSON.parseObject(b);
-        Object objectb1 = Optional.ofNullable(objectb).map(o->o.get("code").toString());
-        Org dish = new Org();
-        dish.getA();
+        Object objectb1 = Optional.ofNullable(objectb).map(o->o.get("code"));
+        Object objectb2 = Optional.ofNullable(objectb).map(o->o.get("code")).orElse("没取到值");
 
         System.out.println(JSON.toJSONString(objectb1));
+        System.out.println(JSON.toJSONString(objectb2));
 
     }
 }

@@ -19,7 +19,7 @@ import java.util.List;
 public class Test1207 {
 
     /**
-     * 验证break语句
+     * 验证break语句,是否跳出循环，continue结束本次循环
      * @param args
      */
     public static void main(String[] args) {
@@ -50,7 +50,7 @@ public class Test1207 {
 
         List<Org> list0 = TestRemove.get0();
         List<Org> list1 = new ArrayList<>();
-       int b= 9/10;
+        int b= 9/10;
         System.out.println(b);
     }
 }
