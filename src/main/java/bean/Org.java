@@ -1,5 +1,7 @@
 package bean;
 
+import java.util.List;
+
 /**
  * ============================
  *
@@ -16,15 +18,25 @@ public class Org {
 
     private  String name ;
 
-    private  Long a = 0L ;
+    private List<Org> child ;
 
-    public Long getA() {
+    /*private  Long a = 0L */;
+
+    public List<Org> getChild() {
+        return child;
+    }
+
+    public void setChild(List<Org> child) {
+        this.child = child;
+    }
+
+    /*public Long getA() {
         return a;
     }
 
     public void setA(Long a) {
         this.a = a;
-    }
+    }*/
 
     public String getId() {
         return id;
