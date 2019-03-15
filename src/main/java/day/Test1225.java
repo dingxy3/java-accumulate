@@ -13,7 +13,11 @@ import java.util.List;
  * =============================
  */
 public class Test1225 {
+    Test1214 we = new Test1214();
+    public  void a (){
+    }
     public static void main(String[] args) {
+
         //list.foreach退出本次循环
         List list = new ArrayList();
         list.add("1");

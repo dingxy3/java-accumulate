@@ -14,6 +14,7 @@ import java.util.List;
  */
 public class Test1214 {
 
+    public static int a = 1;
     public static void main(String[] args) {
         List arrayList = new ArrayList();
         arrayList.add("aaaa");
