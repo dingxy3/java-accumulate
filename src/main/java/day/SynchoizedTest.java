@@ -71,6 +71,20 @@ public class SynchoizedTest {
             }
         }
     }
+    public   void staticMethod3(String threadName){                      //静态方法2
+        for( int i = 0; i < 10 ; i++)
+        {
+            System.out.println("static method3 is running!" + threadName);
+            try
+            {
+                Thread.sleep(1000);
+            } catch (InterruptedException e)
+            {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }
 
     public static void main(String[] args) {
 
@@ -130,7 +144,34 @@ public class SynchoizedTest {
             excute1.shutdown();
         }*/
         //3、不同对象在两个线程中调用同一个非静态同步方法。因为非静态方法的锁是对象锁。不同对象不同锁
-        /*SynchoizedTest test1 = new SynchoizedTest();
+        SynchoizedTest test1 = new SynchoizedTest();
+        Thread t3= new Thread(new Runnable()
+        {
+            @Override
+            public void run() {
+                test1.testMethod("method1");
+            }
+        });
+        Thread t4 = new Thread(new Runnable()
+        {
+            @Override
+            public void run() {
+                test1.staticMethod3("method不同对象");
+            }
+        });
+        ExecutorService excute1 = Executors.newScheduledThreadPool(1000);
+        try
+        {
+            excute1.submit(t3);
+            excute1.submit(t4);
+        }catch (Exception e)
+        {
+
+        }finally {
+            excute1.shutdown();
+        }
+
+       /*SynchoizedTest test1 = new SynchoizedTest();
         Thread t3= new Thread(new Runnable()
         {
             @Override
@@ -156,7 +197,5 @@ public class SynchoizedTest {
         }finally {
             excute1.shutdown();
         }*/
-        //
-       System.out.println(1%2);
     }
 }
