@@ -149,7 +149,7 @@ public class SynchoizedTest {
         {
             @Override
             public void run() {
-                test1.testMethod("method1");
+                 staticMethod1("method1");
             }
         });
         Thread t4 = new Thread(new Runnable()
