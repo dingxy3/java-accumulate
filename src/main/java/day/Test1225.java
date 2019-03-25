@@ -2,6 +2,7 @@ package day;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 /**
  * ============================
@@ -34,6 +35,7 @@ public class Test1225 {
            }
 
         );
+        list.stream().anyMatch(Predicate.isEqual("2") );
         //验证空指针
       /*  String[] arr = null;
         String[] arr2 = null;
