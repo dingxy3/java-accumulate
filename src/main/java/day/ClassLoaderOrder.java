@@ -4,8 +4,9 @@ package day;
  * @param
  * @Author: dingxy3
  * @Description:类初始化加载顺序
- * 非静态代码块在类每次没使用或者实例化的时候被执行
+ * 非静态代码块在类每次被使用或者实例化的时候被执行
  * 静态代码块只在第一次时执行一次
+ * 静态代码块>非静态代码块>构造方法
  * @Date: Created in  2019/3/25
  **/
 public class ClassLoaderOrder {
