@@ -1,15 +1,12 @@
+/*
 package day;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonSerializationContext;
-import com.google.gson.JsonSerializer;
+import com.google.gson.*;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
 
+*/
 /**
  * ============================
  *
@@ -18,7 +15,8 @@ import java.util.HashMap;
  * @Description:
  * @since [产品/模块版本]
  * =============================
- */
+ *//*
+
 public class Test0325 {
      static class MyBean extends HashMap<String, String> {
         public String city;
@@ -35,19 +33,24 @@ public class Test0325 {
         }
 
     }
-    /**
+    */
+/**
      * @param args
-     */
+     *//*
+
     public static void main(String[] args) {
        MyBean bean = new MyBean();
         bean.city = "some city";
 
-   /*      Gson gson = new Gson();
+   */
+/*      Gson gson = new Gson();
 
         String json = gson.toJson(bean);
-        System.out.println(json);*/
+        System.out.println(json);*//*
+
         Gson gson = new GsonBuilder().registerTypeAdapter(MyBean.class, new MyBeanSerializer()).create();
         String json = gson.toJson(bean);
         System.out.println(json);
     }
 }
+*/
