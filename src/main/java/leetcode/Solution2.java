@@ -27,6 +27,12 @@ public class Solution2 {
       ListNode(int x) { val = x; }
   }
 
+    /**
+     * 这方法没有通过leetcode的检测
+     * @param l1
+     * @param l2
+     * @return
+     */
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
         ListNode resultNode = new ListNode(0) ;
