@@ -10,7 +10,8 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * @param
  * @Author: dingxy3
- * @Description:
+ * @Description:阻塞队列，利用COnditon实现
+ * 什么叫阻塞队列：为空那就阻塞在那边有值进去，满了就阻塞在那边直到不满
  * @Date: Created in  2019/3/24
  **/
 public class BlockQueue<E> {
