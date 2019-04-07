@@ -28,7 +28,6 @@ public class Solution2 {
   }
 
     /**
-     * 这方法没有通过leetcode的检测
      * @param l1
      * @param l2
      * @return
