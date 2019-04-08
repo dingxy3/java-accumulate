@@ -21,7 +21,7 @@ import java.util.Set;
 public class Solution03 {
 
     public static void main(String[] args) {
-        System.out.println(lengthOfLongestSubstring("abcc"));
+        System.out.println(lengthOfLongestSubstring("abccdefg"));
     }
     public  static  int lengthOfLongestSubstring(String s) {
 
@@ -67,7 +67,6 @@ public class Solution03 {
         {
             return true;
         }
-
         //从前向后遍历字符串，对每个字符，调用String.indexOf()看其后面是否有相同的字符，如果有返回false，否则最后返回true
         for(int i = 0; i < str.length()-1; i++)
         {
