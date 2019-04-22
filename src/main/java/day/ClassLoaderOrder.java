@@ -1,5 +1,7 @@
 package day;
 
+import com.alibaba.fastjson.JSONArray;
+
 /**
  * @param
  * @Author: dingxy3
@@ -26,11 +28,16 @@ public class ClassLoaderOrder {
     public ClassLoaderOrder(){
         System.out.println("3");
         System.out.println("a="+a+",b="+b);
+        JSONArray arry = new JSONArray();
+        arry.add(1,"2");
     }
     public static void run(){
         System.out.println("4");
     }
     int a = 100;
     static int b = 200;
+
+
+
    // static ClassLoaderOrder demo = new ClassLoaderOrder();
 }
